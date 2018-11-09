@@ -7,10 +7,10 @@ int main(void)
 	int a=0, b=1, c=0;
 
 	printf("Start der Folge bis 21 mit while-Schleife\n");
-	while(c<21)
+	while(c<22)
 	{
-		c = a + b;
 		printf("%d ",c);
+		c = a + b;
 		a = b;
 		b = c;
 	}
