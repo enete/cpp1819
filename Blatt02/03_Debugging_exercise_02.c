@@ -8,26 +8,25 @@
  */
 void method01(int eingabe)
 {
-	int a = eingabe;
 	if(eingabe%4 == 0)
 	{
-		printf("%d ist Teilbar durch 4\n",a); //%d,a
+		printf("%d ist Teilbar durch 4\n",eingabe); //%d
 	}
-	if(eingabe%2 == 0)
+	if(eingabe%2 == 0) //if, anstatt if else
 	{
-		printf("%d ist Teilbar durch 2\n",a); //%d,a
+		printf("%d ist Teilbar durch 2\n",eingabe); //%d
 	}
-	if(eingabe%3 == 0)
+	if(eingabe%3 == 0) //if, anstatt if else
 	{
-		printf("%d ist Teilbar durch 3\n",a); //%d,a
+		printf("%d ist Teilbar durch 3\n",eingabe); //%d
 	}
-	if(eingabe%5 == 0)
+	if(eingabe%5 == 0) //if, anstatt if else
 	{
-		printf("%d ist Teilbar durch 5\n",a); //%d,a
+		printf("%d ist Teilbar durch 5\n",eingabe); //%d
 	}
-	if(a == 1);// else
+	if(eingabe%5 != 0 && eingabe%3 != 0 && eingabe%2 != 0 && eingabe%4 != 0) //if, anstatt else
 	{
-		printf("%d ist nicht teilbar durch 2,3,4 oder 5\n",a); //%d,a
+		printf("%d ist nicht teilbar durch 2,3,4 oder 5\n",eingabe); //%d
 	}
 	printf("\n");
 }
@@ -42,7 +41,7 @@ void method02(double eingabe)
 	double ausgabe; //int durch double ersetzt
 	ausgabe = (eingabe/2)*2;
 
-	printf("Eingabe == Ausgabe: %.0f == %.0f\n", eingabe, ausgabe); //%d durch %.0f ersetzt 
+	printf("Eingabe == Ausgabe: %.0f == %.0f\n", eingabe, ausgabe); //%d durch %.0f ersetzt -> ohne Komma als double
 }
 
 /*
@@ -58,7 +57,7 @@ int method03(int eingabe) //segmentation fault core dumped - tried to access mem
 	else if(eingabe > 0)
 	{
 		int rekEingabe = eingabe;
-		return eingabe * method03(--rekEingabe); //-- umgestellt
+		return eingabe * method03(--rekEingabe); //-- umgestellt -> decrement, dann ausführen 
 	}
 	return 0;
 }
@@ -72,8 +71,8 @@ void method04(int eingabe)
 	while(eingabe != 0)
 	{
 		int rest = eingabe %10;
-		printf("%d", rest);	//%s durch %d ersetzt
-		eingabe = (eingabe-rest)/20;
+		printf("%d", rest);	//%s durch %d ersetzt -> integer und kein string
+		eingabe = eingabe/10; //20 durch 10 ersetzt -> falsche Berechnung
 	}
 	printf("\n");
 }
