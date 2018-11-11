@@ -13,19 +13,19 @@ void method01(int eingabe)
 	{
 		printf("%d ist Teilbar durch 4\n",a); //%d,a
 	}
-	else if(eingabe%2 == 0)
+	if(eingabe%2 == 0)
 	{
 		printf("%d ist Teilbar durch 2\n",a); //%d,a
 	}
-	else if(eingabe%3 == 0)
+	if(eingabe%3 == 0)
 	{
 		printf("%d ist Teilbar durch 3\n",a); //%d,a
 	}
-	else if(eingabe%5 == 0)
+	if(eingabe%5 == 0)
 	{
 		printf("%d ist Teilbar durch 5\n",a); //%d,a
 	}
-	else
+	if(a == 1);// else
 	{
 		printf("%d ist nicht teilbar durch 2,3,4 oder 5\n",a); //%d,a
 	}
