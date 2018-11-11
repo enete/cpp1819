@@ -2,7 +2,7 @@
 #include <stdlib.h> //atoi
 
 /**
- * main
+ * main a
  */
 int main(int argc, char *argv[]) 
 {	

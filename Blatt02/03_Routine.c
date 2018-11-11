@@ -16,13 +16,6 @@ void ggt(int n,int m)
 
 }
 
-/*
- * Primzahl Test
- */
-int isPrime(int eingabe)
-{
-
-}
 
 /**
  * main
@@ -36,11 +29,5 @@ int main(int argc, char const *argv[])
 	// ggt
 	printf("Größter gemeinsamer Teiler:\n");
 	ggt();
-
-	// Method03
-	printf("\nMethod03:\n");
-	for(int i; i<100; i++);
-	{
-		printf("%d ist eine Primzahl\n")isPrime(i);
-	}	
+	
 }
