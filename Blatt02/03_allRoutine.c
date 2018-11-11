@@ -1,13 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h> //atoi
 
-/**
- * main a
+/*
  */
-int main(int argc, char *argv[]) 
-{	
-	int eingabe = (argc > 1) ? atoi (argv[1]) : 0;
+void kgv(int n, int m)
+{
 
+}
+/*
+ */
+void ggt(int n, int m)
+{
+
+}
+
+/*
+ * Primzahl Test
+ */
+void isPrime(int eingabe)
+{	
 	int counter = 0;
 	int zahl = 1;
 	int ergebnis = 0;
@@ -30,7 +41,16 @@ int main(int argc, char *argv[])
 	else
 	{
 		printf("%d ist keine Primzahl!\n", eingabe);
+	}		
+}
+
+int main(int argc, char *argv[])
+{
+	// Primzahlen
+	for(int i = 1; i<24; i++)
+	{
+		isPrime(i);
 	}
 
-	return 0;		
+	return 0;
 }
