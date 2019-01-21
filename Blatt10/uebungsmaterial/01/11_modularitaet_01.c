@@ -1,4 +1,5 @@
 #include "include/matrixOps.h"
+#include "math.h"
 
 int main()
 {
